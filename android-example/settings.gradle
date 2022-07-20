@@ -1,0 +1,32 @@
+pluginManagement {
+    repositories {
+        maven {
+            // All of React Native (JS, Android binaries) is installed from npm
+            url "D:/WORKING/ZHG/RN-example/androidRN/node_modules/react-native/android"
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("D:/WORKING/ZHG/RN-example/androidRN/node_modules/jsc-android/dist")
+        }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            // All of React Native (JS, Android binaries) is installed from npm
+            url "D:/WORKING/ZHG/RN-example/androidRN/node_modules/react-native/android"
+        }
+        maven {
+            // Android JSC is installed from npm
+            url("D:/WORKING/ZHG/RN-example/androidRN/node_modules/jsc-android/dist")
+        }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "android-test"
+include ':app'
